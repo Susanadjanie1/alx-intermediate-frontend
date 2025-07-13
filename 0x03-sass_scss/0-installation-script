@@ -1,0 +1,42 @@
+# Steps to Install Sass
+
+This script documents the process of installing Sass in a Node.js environment.
+
+**Initial Attempt as per instructions:**
+
+The instruction was to run:
+`npm install sass -v 3.7.4`
+
+**Result of initial attempt:**
+This command failed with an `ETARGET` error, indicating "No matching version found for sass@3.7.4". This suggests that version `3.7.4` of the `sass` package (Dart Sass) does not exist on the npm registry. The `-v` flag was also incorrectly used in the original command for specifying a package version.
+
+**Corrected Installation Method (Installing the latest stable Sass):**
+
+To successfully install Sass (Dart Sass, the recommended and actively maintained version), the following steps were taken:
+
+1.  **Navigate to the project directory:**
+    ```bash
+    cd C:\Users\susan\ALX-Pro-Dev\0x03-sass_scss
+    ```
+    (Ensure Node.js and npm are installed on the system.)
+
+2.  **Install the latest stable version of the `sass` package as a local project dependency:**
+    ```bash
+    npm install sass
+    ```
+    This command successfully installed Sass into the `node_modules` directory of the project.
+
+3.  **Verify the Sass installation and functionality:**
+    Since `sass` is installed as a local dependency, it's executed using `npx`, which allows running executables from the `node_modules/.bin` directory.
+
+    ```bash
+    npx sass --version
+    ```
+
+    **Observed Output:**
+    `1.89.2 compiled with dart2js 3.8.1`
+    (Note: The version number may vary depending on the latest stable release at the time of installation.)
+
+**Conclusion:**
+
+Sass is now successfully installed and callable within the project context using `npx`. The specific version `3.7.4` requested in the initial instruction was found to be unavailable.
